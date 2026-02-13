@@ -1,0 +1,5 @@
+$api = "https://jsonplaceholder.typicode.com/users";
+$api2 = "https://catfact.ninja/fact";
+$api3 = "https://dog.ceo/api/breeds/image/random";
+$api4 = "https://api.adviceslip.com/advice";
+$api5 = "https://api.kanye.rest/
