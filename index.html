@@ -1,310 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notre Projet en HTML CSS JAVASCRIPT</title>
+    <title>EMIT Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body data-theme="light">
     <header class="hero" id="top">
         <div class="container hero-content">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <p class="eyebrow" data-i18n="hero.eyebrow">Bonjour, nous sommes</p>
-                    <h1 class="display-4 fw-bold mb-3" id="we-are">GROUPE B METU </h1>
-                    <p class="lead text-dark mb-4">
-                        Nous sommes une groupe de dix personnes dont trois six garçon et quatre filles dans la mmême niveau et capacité
+            <div class="hero-layout">
+                <div class="hero-text">
+                    <p class="eyebrow">Bonjour, nous sommes</p>
+                    <div class="hero-title-box">
+                        <h1 id="we-are">GROUPE B METU</h1>
+                    </div>
+                    <p class="lead">
+                        Nous sommes un groupe de 10 etudiants EMIT, motives pour creer des projets web modernes.
                     </p>
-                    <p class="hero-summary mb-4" >Bienvenue dans notre petite projet en html css et javascript</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a class="btn btn-primary btn-lg" href="#projects" >Decouvrir</a>
-                        <a class="btn btn-outline-light btn-lg" href="#contact" >Contact</a>
+                    <p class="hero-summary">
+                        Bienvenue dans notre projet HTML, CSS et JavaScript.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">Decouvrir</a>
+                        <a class="btn btn-secondary" href="#contact">Contact</a>
                     </div>
                 </div>
-                <div class="col-lg-5 mt-5 mt-lg-0">
-                    <div class="hero-card ">
+
+                <aside class="hero-side">
+                    <div class="hero-card">
                         <div class="hero-card-inner">
-                            <div class="profile-photo-wrap mb-4">
-                                <img class="profile-photo" src="fond15.jpg" alt="Profile photo">
+                            <div class="hero-carousel" id="hero-carousel">
+                                <button class="carousel-nav prev" id="carousel-prev" type="button" aria-label="Image precedente">&#10094;</button>
+                                <div class="carousel-track" id="carousel-track">
+                                    <article class="carousel-slide is-active">
+                                        <img class="carousel-image click-fullscreen" src="fond15.jpg" alt="Photo du groupe EMIT">
+                                        <p class="carousel-caption">EMIT Team 2025</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="fond15.jpg" alt="Photo etudiants EMIT">
+                                        <p class="carousel-caption">Collaborer, creer, evoluer</p>
+                                    </article>
+                                    <article class="carousel-slide">
+                                        <img class="carousel-image click-fullscreen" src="fond15.jpg" alt="Projet web du groupe">
+                                        <p class="carousel-caption">Projet HTML CSS JS</p>
+                                    </article>
+                                </div>
+                                <button class="carousel-nav next" id="carousel-next" type="button" aria-label="Image suivante">&#10095;</button>
+                                <div class="carousel-dots" id="carousel-dots" aria-label="Choisir une image">
+                                    <button type="button" class="carousel-dot is-active" data-slide="0" aria-label="Slide 1"></button>
+                                    <button type="button" class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+                                    <button type="button" class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
+                                </div>
                             </div>
-                            <h3 class="mb-3" data-i18n="hero.card_title">Notre Photo</h3>
+                            <h3>Notre Galerie</h3>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
         </div>
-        <div class="scroll-indicator" data-i18n="hero.scroll">Scroll</div>
+        <div class="scroll-indicator">Scroll</div>
     </header>
-    <!-- section de detailes des information des gens -->
+
     <section class="section projects" id="projects">
         <div class="header-pages">
-            <nav class="navigation flexbox">
-                <h1>METU</h1>
-                <ul class="navigation flexbox">
-                    <li><a href="#" class="link">Decouvrir</a></li>
-                    <li><a href="#" class="link">Important</a></li>
-                    <li><a href="#" class="link">Contact</a></li>
+            <nav class="navigation container">
+                <h2 class="logo">EMIT</h2>
+                <ul class="menu-links">
+                    <li><a href="#top" class="link">Accueil</a></li>
+                    <li><a href="#projects" class="link">Decouvrir</a></li>
+                    <li><a href="#contact" class="link">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
         <div class="container">
-            <div class="grid">
-
-                <!-- lINFORMATION POUR CHAQUE JEUNES DE LA GROUPE  -->
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Steeve Edith</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(1)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Steeve Edith</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(2)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(3)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(4)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(5)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(6)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(7)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(8)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(9)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="aeration-box">
-                            <div class="card-img">
-                                <img src="fond15.jpg" alt="images de tous les monde" class="image">
-                            </div>
-                            <section class="text-card">
-                                <h4 class="card-title">Voary Andoniaina</h4>
-                                <p class="card-description">Voici quelque introduction sur la personne en question </p>
-                                <div class="card-buttons">
-                                    <button class="en-savoir-plus button" onclick="showModal(10)">En savoir plus</button>
-                                    <a href="#" class="perso-btn button link">Détails</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                    
+            <div class="section-head">
+                <p class="section-mini-title">Notre Equipe</p>
+                <h2>Membres du groupe</h2>
             </div>
+            <div class="grid" id="members-grid"></div>
         </div>
     </section>
 
-    <section class="modal-parts" style="display: none;" id="modal-page">
+    <section class="section contact" id="contact">
+        <div class="container contact-layout">
+            <div class="contact-info-card">
+                <p class="section-mini-title">Contact Page</p>
+                <h2>Parlons de votre projet</h2>
+                <p>
+                    Vous pouvez nous contacter pour une collaboration, une question technique ou une demo de notre travail.
+                </p>
+                <div class="contact-lines">
+                    <p><strong>Email:</strong> emit.team@gmail.com</p>
+                    <p><strong>Telephone:</strong> +261 38 00 000 00</p>
+                    <p><strong>Adresse:</strong> Universite EMIT, Madagascar</p>
+                </div>
+            </div>
+
+            <form class="contact-form-card" id="contact-form">
+                <label for="contact-name">Nom complet</label>
+                <input id="contact-name" type="text" placeholder="Votre nom" required>
+
+                <label for="contact-email">Email</label>
+                <input id="contact-email" type="email" placeholder="votre@email.com" required>
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" rows="5" placeholder="Ecrivez votre message..." required></textarea>
+
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+                <p id="contact-feedback" class="contact-feedback" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal-parts" id="modal-page" aria-hidden="true">
         <div class="modal-contains">
-            <section class="parts-content ">
-                <div class="image-part-details">
-                    <img src="/fond15.jpg" alt="images dans la partie de détails" class="images-details" width="300">
+            <section class="parts-content" role="dialog" aria-modal="true" aria-labelledby="modal-fullname">
+                <div class="image-part-details modal-animated-item">
+                    <img src="fond15.jpg" alt="Photo de profil" class="images-details click-fullscreen" id="modal-image">
                 </div>
 
                 <div class="text-partie">
-                    <section>
-                        <h5>Nom:</h5>
-                        <p>RANDRIANATENAINA</p>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Nom complet</h5>
+                        <p id="modal-fullname">Nom Prenom</p>
                     </section>
-                    <section>
-                        <h5>Prénom:</h5>
-                        <p>Nomentsoa Patrick</p>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Age</h5>
+                        <p id="modal-age">18 ans</p>
                     </section>
-                    <section>
-                        <h5>contact:</h5>
-                        <p>03885478</p>
-                        <p>patrick@gmail.com</p>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Contact</h5>
+                        <p id="modal-phone">000 00 000 00</p>
+                        <p id="modal-email">user@email.com</p>
                     </section>
-                    <section>
-                        <h5>Compte GITHUB</h5>
-                        <a href="#">https/github.com</a>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Compte GitHub</h5>
+                        <a href="#" id="modal-github" target="_blank" rel="noopener noreferrer">https://github.com</a>
                     </section>
-                    <section>
-                        <h5>Préferences</h5>
-                        <p>Chanter, danser, lire , coucou</p>
+                    <section class="modal-item modal-animated-item">
+                        <h5>Langages</h5>
+                        <p id="modal-stack">HTML, CSS, Javascript</p>
                     </section>
-                    <section>
+                    <section class="modal-item modal-animated-item">
                         <h5>Description</h5>
-                        <p>Je suis un jeune de la promotion 2025 du programme et je veux dévenir un développeur fullstack en informatique et scientifique des donnée</p>
+                        <p id="modal-description">Description du membre.</p>
                     </section>
                 </div>
-                
-                <button id="closeModal" class="scroll-indicator">fermer</button> 
-            </section>  
+
+                <button id="closeModal" class="modal-close-btn" type="button">Fermer</button>
+            </section>
         </div>
     </section>
+
+    <section class="image-viewer" id="image-viewer" aria-hidden="true">
+        <button class="image-viewer-close" id="image-viewer-close" type="button" aria-label="Fermer l'image">&times;</button>
+        <img id="image-viewer-img" src="" alt="Preview image fullscreen">
+    </section>
+
+    <footer class="site-footer" id="footer">
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <h3>EMIT Project</h3>
+                <p>Equipe de developpement web - HTML, CSS et JavaScript.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#top">Accueil</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>emit.team@gmail.com</p>
+                <p>+261 38 00 000 00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EMIT Team. Tous droits reserves.</p>
+        </div>
+    </footer>
 
     <div class="theme-toggle-card">
         <div class="lang-toggle" role="group" aria-label="Language">
             <button class="lang-btn" type="button" data-lang="en" aria-label="English">
                 <svg class="flag" viewBox="0 0 36 24" role="img" aria-hidden="true" focusable="false">
-                    <rect width="36" height="24" fill="#012169"/>
-                    <path d="M0 0 L36 24 M36 0 L0 24" stroke="#fff" stroke-width="6"/>
-                    <path d="M0 0 L36 24 M36 0 L0 24" stroke="#C8102E" stroke-width="3"/>
-                    <rect x="15" width="6" height="24" fill="#fff"/>
-                    <rect y="9" width="36" height="6" fill="#fff"/>
-                    <rect x="16.5" width="3" height="24" fill="#C8102E"/>
-                    <rect y="10.5" width="36" height="3" fill="#C8102E"/>
+                    <rect width="36" height="24" fill="#012169"></rect>
+                    <path d="M0 0 L36 24 M36 0 L0 24" stroke="#fff" stroke-width="6"></path>
+                    <path d="M0 0 L36 24 M36 0 L0 24" stroke="#C8102E" stroke-width="3"></path>
+                    <rect x="15" width="6" height="24" fill="#fff"></rect>
+                    <rect y="9" width="36" height="6" fill="#fff"></rect>
+                    <rect x="16.5" width="3" height="24" fill="#C8102E"></rect>
+                    <rect y="10.5" width="36" height="3" fill="#C8102E"></rect>
                 </svg>
             </button>
             <button class="lang-btn" type="button" data-lang="fr" aria-label="French">
                 <svg class="flag" viewBox="0 0 36 24" role="img" aria-hidden="true" focusable="false">
-                    <rect width="12" height="24" fill="#0055A4"/>
-                    <rect x="12" width="12" height="24" fill="#fff"/>
-                    <rect x="24" width="12" height="24" fill="#EF4135"/>
+                    <rect width="12" height="24" fill="#0055A4"></rect>
+                    <rect x="12" width="12" height="24" fill="#fff"></rect>
+                    <rect x="24" width="12" height="24" fill="#EF4135"></rect>
                 </svg>
             </button>
             <button class="lang-btn" type="button" data-lang="mg" aria-label="Malagasy">
                 <svg class="flag" viewBox="0 0 36 24" role="img" aria-hidden="true" focusable="false">
-                    <rect width="12" height="24" fill="#fff"/>
-                    <rect x="12" width="24" height="12" fill="#FC3D32"/>
-                    <rect x="12" y="12" width="24" height="12" fill="#007E3A"/>
+                    <rect width="12" height="24" fill="#fff"></rect>
+                    <rect x="12" width="24" height="12" fill="#FC3D32"></rect>
+                    <rect x="12" y="12" width="24" height="12" fill="#007E3A"></rect>
                 </svg>
             </button>
         </div>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
             <span class="visually-hidden">Toggle theme</span>
             <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="5" fill="currentColor"/>
+                <circle cx="12" cy="12" r="5" fill="currentColor"></circle>
                 <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                    <line x1="12" y1="1" x2="12" y2="4"/>
-                    <line x1="12" y1="20" x2="12" y2="23"/>
-                    <line x1="1" y1="12" x2="4" y2="12"/>
-                    <line x1="20" y1="12" x2="23" y2="12"/>
-                    <line x1="4.2" y1="4.2" x2="6.4" y2="6.4"/>
-                    <line x1="17.6" y1="17.6" x2="19.8" y2="19.8"/>
-                    <line x1="17.6" y1="6.4" x2="19.8" y2="4.2"/>
-                    <line x1="4.2" y1="19.8" x2="6.4" y2="17.6"/>
+                    <line x1="12" y1="1" x2="12" y2="4"></line>
+                    <line x1="12" y1="20" x2="12" y2="23"></line>
+                    <line x1="1" y1="12" x2="4" y2="12"></line>
+                    <line x1="20" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.2" y1="4.2" x2="6.4" y2="6.4"></line>
+                    <line x1="17.6" y1="17.6" x2="19.8" y2="19.8"></line>
+                    <line x1="17.6" y1="6.4" x2="19.8" y2="4.2"></line>
+                    <line x1="4.2" y1="19.8" x2="6.4" y2="17.6"></line>
                 </g>
             </svg>
             <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20 15.5a8.5 8.5 0 1 1-7.5-11 7 7 0 1 0 7.5 11z" fill="currentColor"/>
+                <path d="M20 15.5a8.5 8.5 0 1 1-7.5-11 7 7 0 1 0 7.5 11z" fill="currentColor"></path>
             </svg>
         </button>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
