@@ -25,8 +25,8 @@ const modalFields = {
 const members = [
     {
         id: 1,
-        nom: "RANDRIANANTENAINA",
-        prenom: "Nomentsoa Patrick",
+        nom: "RASOANIRINA",
+        prenom: "Fetra Sarobidy",
         description:
             "Developpeur full-stack passionne de science des donnees et de solutions utiles.",
         github: "https://github.com/Patrick-p25s",
@@ -34,7 +34,7 @@ const members = [
         email: "nomp6836@gmail.com",
         age: "18",
         langage: "PHP, Javascript, Python",
-        image: "fond15.jpg",
+        image: "images/fond1.jpg",
     },
     {
         id: 2,
@@ -47,7 +47,7 @@ const members = [
         email: "brindtoto@gmail.com",
         age: "18",
         langage: "Linux, PHP, Javascript",
-        image: "fond15.jpg",
+        image: "images/fond11.jpg",
     },
     {
         id: 3,
@@ -60,12 +60,12 @@ const members = [
         email: "edit-emit@gmail.com",
         age: "19",
         langage: "HTML, CSS, Javascript",
-        image: "fond15.jpg",
+        image: "images/fond3.jpg",
     },
     {
         id: 4,
-        nom: "RABEMANANJARA",
-        prenom: "Lova",
+        nom: "RASOAMANANA",
+        prenom: "Elia Carène",
         description:
             "Curieux et rigoureux, j'aime transformer les idees en applications concretes.",
         github: "https://github.com/lova",
@@ -73,12 +73,12 @@ const members = [
         email: "lova.emit@gmail.com",
         age: "19",
         langage: "PHP, MySQL, Javascript",
-        image: "fond15.jpg",
+        image: "images/fond4.jpg",
     },
     {
         id: 5,
-        nom: "RAKOTONIRINA",
-        prenom: "Ando",
+        nom: "ANDONIAINA",
+        prenom: "Voary",
         description:
             "Interesse par le backend, la qualite du code et la maintenance long terme.",
         github: "https://github.com/ando",
@@ -86,12 +86,12 @@ const members = [
         email: "ando.emit@gmail.com",
         age: "18",
         langage: "Node.js, PHP, SQL",
-        image: "fond15.jpg",
+        image: "images/fond5.jpg",
     },
     {
         id: 6,
-        nom: "RAHAMEFY",
-        prenom: "Miora",
+        nom: "MAMILALAINA",
+        prenom: "Fleuria",
         description:
             "Je prefere les interfaces propres, lisibles et faciles a utiliser sur mobile.",
         github: "https://github.com/miora",
@@ -99,12 +99,12 @@ const members = [
         email: "miora.emit@gmail.com",
         age: "18",
         langage: "CSS, Javascript, UI",
-        image: "fond15.jpg",
+        image: "images/fond6.jpg",
     },
     {
         id: 7,
         nom: "RAVELONARIVO",
-        prenom: "Tahina",
+        prenom: "Stephan",
         description:
             "Concentre sur les performances et la clarte des choix techniques.",
         github: "https://github.com/tahina",
@@ -112,12 +112,12 @@ const members = [
         email: "tahina.emit@gmail.com",
         age: "19",
         langage: "Python, Javascript, API",
-        image: "fond15.jpg",
+        image: "images/fond7.jpg",
     },
     {
         id: 8,
         nom: "RAKOTOMALALA",
-        prenom: "Nirina",
+        prenom: "Johny Nantenaina",
         description:
             "J'aime apprendre vite, prototyper et livrer un rendu solide.",
         github: "https://github.com/nirina",
@@ -125,12 +125,12 @@ const members = [
         email: "nirina.emit@gmail.com",
         age: "18",
         langage: "HTML, CSS, PHP",
-        image: "fond15.jpg",
+        image: "images/fond8.jpg",
     },
     {
         id: 9,
-        nom: "RANDRIA",
-        prenom: "Mamy",
+        nom: "RANDRIANANTENAINA",
+        prenom: "Nomentsoa Patrick",
         description:
             "Interesse par l'algorithmique, la logique et le developpement web.",
         github: "https://github.com/mamy",
@@ -138,12 +138,12 @@ const members = [
         email: "mamy.emit@gmail.com",
         age: "20",
         langage: "C, PHP, Javascript",
-        image: "fond15.jpg",
+        image: "images/fond17.jpg",
     },
     {
         id: 10,
-        nom: "RAKOTO",
-        prenom: "Felana",
+        nom: "RANDRIAMANANA",
+        prenom: "Alai Odon",
         description:
             "Toujours motivee pour collaborer et faire avancer le projet en equipe.",
         github: "https://github.com/felana",
@@ -151,7 +151,7 @@ const members = [
         email: "felana.emit@gmail.com",
         age: "18",
         langage: "HTML, CSS, Javascript",
-        image: "fond15.jpg",
+        image: "images/fond10.jpg",
     },
 ];
 
@@ -175,7 +175,7 @@ function renderMembers() {
                         <img src="${member.image}" alt="Photo de ${member.prenom}" class="image click-fullscreen">
                     </div>
                     <section class="text-card">
-                        <h3 class="card-title">${member.prenom} ${member.nom}</h3>
+                        <h3 class="card-title">${member.prenom}</h3>
                         <p class="card-description">${member.description}</p>
                         <div class="card-buttons">
                             <button class="en-savoir-plus button" type="button" data-member-id="${member.id}">En savoir plus</button>
