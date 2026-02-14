@@ -20,6 +20,11 @@ body {
     font-size: 200%;
 }
 
+a{
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 20px;
+}
+
 .nav-links {
     display: flex;
     gap: 3rem;
@@ -43,3 +48,93 @@ body {
     font-size: 17px;
     font-weight:500;
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6% 4rem 6%;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.intro{
+    flex: 1 1 400px;
+}
+
+.mini-cartes{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      width: 100%;
+      max-width: 500px;
+}
+
+.stack-item{
+    background-color: #eae3db;
+    border-radius: 32px;
+    padding: 1.2rem 1rem 1rem 1rem;
+    box-shadow: 0 20px 35px -10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    border: 1px solid #fbf8f4;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.badge{
+    display: inline-block;
+    background-color: #e5d9d0;
+    color: #4f3f34;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+h1{
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+span{
+    color: #b58b6b;
+    text-decoration: underline 0.3rem wavy #e9cfb5;
+}
+
+.intro p{
+    font-size: 1.2rem;
+    color: #3d3d3d;
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+.stack-item:nth-child(1) { transform: rotate(-2deg) translateY(5px); }
+.stack-item:nth-child(2) { transform: rotate(3deg) translateY(-10px); background-color: #f1ede8; }
+.stack-item:nth-child(3) { transform: rotate(1deg) translateY(15px); background-color: #ded5cc; }
+.stack-item:nth-child(4) { transform: rotate(-4deg) translateY(-5px); }
+
+.thumb {
+    width: 100%;
+    height: 250px;
+    border-radius: 18px;
+    margin-bottom: 0.8rem;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stack-item:nth-child(1) .thumb { background-image: url(TOTO/Brindo.png); }
+.stack-item:nth-child(2) .thumb { background-image: url(TOTO/Guitare.jpeg); }
+.stack-item:nth-child(3) .thumb { background-image: url(TOTO/XUbuntu.jpg); }
+.stack-item:nth-child(4) .thumb { background-image: url(TOTO/BigTOTO.jpg); }
