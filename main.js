@@ -179,7 +179,7 @@ function renderMembers() {
                         <p class="card-description">${member.description}</p>
                         <div class="card-buttons">
                             <button class="en-savoir-plus button" type="button" data-member-id="${member.id}">En savoir plus</button>
-                            <button class="perso-btn button" type="button" data-member-id="${member.id}">Details</button>
+                            <button class="perso-btn button"><a href="#" class="link">Details</a></button>
                         </div>
                     </section>
                 </article>
