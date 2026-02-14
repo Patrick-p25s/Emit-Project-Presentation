@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    color: #12243e;
+    background:
+        radial-gradient(circle at 85% 6%, rgba(42, 91, 215, 0.16), transparent 38%),
+        radial-gradient(circle at 10% 18%, rgba(11, 127, 121, 0.14), transparent 36%),
+        linear-gradient(150deg, #f5f8fc, #e9f0fb);
+    height: 100vh;
+}
+
+.aeration{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    pointer-events: none;
+}
+.title{
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    color: rgba(255, 0, 0, 0.777);
+    text-decoration: underline;
+}
+section{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: auto;
+    text-indent: auto;
+    background-color: white;
+    margin: 20px 0;
+}
+section h2{
+    color: green;
+}
