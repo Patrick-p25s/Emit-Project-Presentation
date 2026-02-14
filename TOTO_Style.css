@@ -199,3 +199,20 @@ article:hover {
     transition: 0.2s;
     box-shadow: 0 10px 15px -5px rgba(0,0,0,0.1);
 }
+
+
+.card-project i{
+    position: relative;
+    padding-right: 25px;
+    text-decoration: none;
+    color: #333;
+}
+.card-project i::after{
+    content: "→";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+}
+.card-project i:hover::after{
+    transform: translateX(5px);
+}
