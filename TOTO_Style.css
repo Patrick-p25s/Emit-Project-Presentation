@@ -1,0 +1,17 @@
+body {
+    background-color: #f6f4f0;
+    font-family: 'Inter', sans-serif;
+    color: #1e1e1e;
+    line-height: 1.5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 6%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
