@@ -15,3 +15,14 @@ body {
     background-color: transparent;
 }
 
+.logo {
+    font-weight: 700;
+    font-size: 200%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
