@@ -3,53 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Patrick Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="patrick.css">
 </head>
 <body>
      <header class="hero">
         <article class="info-card article1">
             <div class="card-img">
-                <img src="../images/nomentsoa.png" alt="Photo de ${member.prenom}" class="image click-fullscreen">
+                <img src="../images/nomentsoa.png" alt="Photo de Nomentsoa Patrick" class="image click-fullscreen">
             </div>
             <section class="text-card">
                 <h3 class="card-title name">Nomentsoa Patrick</h3>
             </section>
             <section>
-                <div class="citation">
-                    <p>Il ne savait pas que c'etait impossible donc il l'a fait</p>
-                    <p>Albert Einstein</p>
+                <div class="citation" aria-live="polite">
+                    <p id="citation-text" class="citation-text">Il ne savait pas que c'etait impossible donc il l'a fait.</p>
+                    <p id="citation-author" class="citation-author">Albert Einstein</p>
                 </div>
             </section>
         </article>
         <article class="info-card article2">
             <h1 class="title">Informations</h1>
             <select name="temps" id="temps">
-                <option value="passe">Passé</option>
-                <option value="present">Présent</option>
+                <option value="passe">Passe</option>
+                <option value="present" selected>Present</option>
                 <option value="future">Future</option>
             </select>
-            <section>
-                <h2>Origine</h2>
-                <p>Je viens d'Andranomadio, commune Tsiroanomandidy Fihaonana, districk Tsiroanomandidy et région Bongolava du province Antananarivo</p>
-            </section>
-            <section>
-                <h2>Passe-temps</h2>
-                <p>J'aime de passer mon temps en codant, manger, dormir, regarder des video, jouer de guitare et chanter ave ma belle voix</p>
-            </section>
-            <section>
-                <h2>Preferences</h2>
-                <p>J'aime la couleur noir et blanc, j'adore les haricots, et mon plat préféré c'est haricot au coco, j'admire tous ce qui est calme.</p>
-            </section>
-            <section>
-                <h2>Objectifs</h2>
-                <p>Je veux devenir un développeur le plus complet avec la compétence en donnée, résaux, cloud,et l'intelligence artificielle.</p>
-            </section>
-            <section>
-                <h2></h2>
-            </section>
 
+            <p id="period-label" class="period-label"></p>
+            <section id="info-content" class="info-content" aria-live="polite"></section>
         </article>
      </header>
+
+     <script src="patrick.js"></script>
 </body>
 </html>

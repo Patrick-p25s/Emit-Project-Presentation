@@ -952,6 +952,14 @@ body.page-loaded .hero {
 }
 
 @media (max-width: 980px) {
+    .section {
+        padding: 58px 0;
+    }
+
+    .hero {
+        padding: 72px 0 70px;
+    }
+
     .hero-layout,
     .contact-layout {
         grid-template-columns: 1fr;
@@ -967,6 +975,12 @@ body.page-loaded .hero {
 
     .footer-layout {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .theme-toggle-card {
+        right: 10px;
+        bottom: 10px;
+        padding: 7px 8px;
     }
 }
 
@@ -988,15 +1002,59 @@ body.page-loaded .hero {
     .menu-links {
         gap: 10px;
         font-size: 0.95rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     .theme-toggle-card {
         right: 10px;
         bottom: 10px;
+        gap: 5px;
+        border-radius: 12px;
     }
 
     .footer-layout {
         grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        min-height: auto;
+        padding: 10px 0;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 56px 0 62px;
+    }
+
+    .section {
+        padding: 48px 0;
+    }
+
+    .hero-title-box {
+        border-radius: 16px;
+        padding: 13px 14px;
+    }
+
+    .hero-card {
+        border-radius: 16px;
+        padding: 14px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-actions {
+        gap: 8px;
+    }
+
+    .header-pages {
+        margin-bottom: 20px;
     }
 
     .parts-content {
@@ -1069,5 +1127,75 @@ body.page-loaded .hero {
 
     .modal-close-btn {
         background: rgba(255, 255, 255, 0.88);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: calc(100% - 18px);
+    }
+
+    .section {
+        padding: 42px 0;
+    }
+
+    .header-pages {
+        position: static;
+    }
+
+    .navigation {
+        gap: 8px;
+    }
+
+    .menu-links {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .hero::before {
+        width: 240px;
+        height: 240px;
+        right: -105px;
+        top: -105px;
+    }
+
+    .hero::after {
+        width: 210px;
+        height: 210px;
+        left: -95px;
+        bottom: -105px;
+    }
+
+    .carousel-track,
+    .carousel-image {
+        min-height: 210px;
+        height: 210px;
+    }
+
+    .carousel-caption {
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        font-size: 0.86rem;
+        padding: 7px 8px;
+    }
+
+    .theme-toggle-card {
+        left: 8px;
+        right: auto;
+        bottom: 8px;
+        padding: 6px 7px;
+    }
+
+    .lang-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .theme-toggle {
+        width: 34px;
+        height: 30px;
     }
 }
