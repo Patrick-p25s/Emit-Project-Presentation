@@ -35,6 +35,7 @@ const members = [
         age: "18",
         langage: "PHP, Javascript, Python",
         image: "images/fond1.jpg",
+        html: "personallePage/patrick.html",
     },
     {
         id: 2,
@@ -48,6 +49,7 @@ const members = [
         age: "18",
         langage: "Linux, PHP, Javascript",
         image: "images/fond11.jpg",
+        html: "personallePage/brindo.html",
     },
     {
         id: 3,
@@ -61,6 +63,7 @@ const members = [
         age: "19",
         langage: "HTML, CSS, Javascript",
         image: "images/fond3.jpg",
+        html: "personallePage/edith.html",
     },
     {
         id: 4,
@@ -74,6 +77,7 @@ const members = [
         age: "19",
         langage: "PHP, MySQL, Javascript",
         image: "images/fond4.jpg",
+        html: "personallePage/elia.html",
     },
     {
         id: 5,
@@ -87,6 +91,7 @@ const members = [
         age: "18",
         langage: "Node.js, PHP, SQL",
         image: "images/fond5.jpg",
+        html: "personallePage/voary.html",
     },
     {
         id: 6,
@@ -100,6 +105,7 @@ const members = [
         age: "18",
         langage: "CSS, Javascript, UI",
         image: "images/fond6.jpg",
+        html: "personallePage/fleuria.html",
     },
     {
         id: 7,
@@ -113,6 +119,7 @@ const members = [
         age: "19",
         langage: "Python, Javascript, API",
         image: "images/fond7.jpg",
+        html: "personallePage/stephan.html",
     },
     {
         id: 8,
@@ -126,6 +133,7 @@ const members = [
         age: "18",
         langage: "HTML, CSS, PHP",
         image: "images/fond8.jpg",
+        html: "personallePage/johny.html",
     },
     {
         id: 9,
@@ -139,6 +147,7 @@ const members = [
         age: "18",
         langage: "C, PHP, Javascript",
         image: "images/fond17.jpg",
+        html: "personallePage/patrick.html",
     },
     {
         id: 10,
@@ -152,6 +161,7 @@ const members = [
         age: "18",
         langage: "HTML, CSS, Javascript",
         image: "images/fond10.jpg",
+        html: "personallePage/felana.html",
     },
 ];
 
@@ -179,7 +189,7 @@ function renderMembers() {
                         <p class="card-description">${member.description}</p>
                         <div class="card-buttons">
                             <button class="en-savoir-plus button" type="button" data-member-id="${member.id}">En savoir plus</button>
-                            <button class="perso-btn button"><a href="#" class="link">Details</a></button>
+                            <button class="perso-btn button"><a href="${member.html}" target="_blank" class="link">Details</a></button>
                         </div>
                     </section>
                 </article>
@@ -386,20 +396,6 @@ function initThemeToggle() {
     });
 }
 
-function initLangToggle() {
-    const langButtons = Array.from(document.querySelectorAll(".lang-btn"));
-
-    langButtons.forEach((btn, idx) => {
-        if (idx === 0) {
-            btn.classList.add("active");
-        }
-
-        btn.addEventListener("click", () => {
-            langButtons.forEach((item) => item.classList.remove("active"));
-            btn.classList.add("active");
-        });
-    });
-}
 
 function initContactForm() {
     contactForm.addEventListener("submit", (event) => {
@@ -419,7 +415,6 @@ bindImageFullscreen();
 initModalControls();
 initCarousel();
 initThemeToggle();
-initLangToggle();
 initContactForm();
 
 animateGroupTitle();
