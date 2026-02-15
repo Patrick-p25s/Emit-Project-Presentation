@@ -42,7 +42,7 @@ const members = [
         prenom: "Jean Brindo",
         description:
             "Administrateur systeme et reseau, j'aime construire des architectures robustes.",
-        github: "https://github.com/toto",
+        github: "https://github.com/brind-toto",
         numero: "038 92 00 111",
         email: "brindtoto@gmail.com",
         age: "18",
@@ -55,7 +55,7 @@ const members = [
         prenom: "Steeve Edith",
         description:
             "Passionne par le web moderne, l'UI propre et les experiences fluides.",
-        github: "https://github.com/edit",
+        github: "https://github.com/edit-p25",
         numero: "034 11 88 333",
         email: "edit-emit@gmail.com",
         age: "19",
@@ -68,7 +68,7 @@ const members = [
         prenom: "Elia Carène",
         description:
             "Curieux et rigoureux, j'aime transformer les idees en applications concretes.",
-        github: "https://github.com/lova",
+        github: "https://github.com/elia",
         numero: "034 67 45 120",
         email: "lova.emit@gmail.com",
         age: "19",
@@ -81,7 +81,7 @@ const members = [
         prenom: "Voary",
         description:
             "Interesse par le backend, la qualite du code et la maintenance long terme.",
-        github: "https://github.com/ando",
+        github: "https://github.com/voary",
         numero: "033 40 25 781",
         email: "ando.emit@gmail.com",
         age: "18",
@@ -94,7 +94,7 @@ const members = [
         prenom: "Fleuria",
         description:
             "Je prefere les interfaces propres, lisibles et faciles a utiliser sur mobile.",
-        github: "https://github.com/miora",
+        github: "https://github.com/fleuria",
         numero: "034 21 56 008",
         email: "miora.emit@gmail.com",
         age: "18",
@@ -107,7 +107,7 @@ const members = [
         prenom: "Stephan",
         description:
             "Concentre sur les performances et la clarte des choix techniques.",
-        github: "https://github.com/tahina",
+        github: "https://github.com/stephan",
         numero: "032 57 00 441",
         email: "tahina.emit@gmail.com",
         age: "19",
@@ -120,7 +120,7 @@ const members = [
         prenom: "Johny Nantenaina",
         description:
             "J'aime apprendre vite, prototyper et livrer un rendu solide.",
-        github: "https://github.com/nirina",
+        github: "https://github.com/johny",
         numero: "034 88 10 500",
         email: "nirina.emit@gmail.com",
         age: "18",
@@ -133,17 +133,17 @@ const members = [
         prenom: "Nomentsoa Patrick",
         description:
             "Interesse par l'algorithmique, la logique et le developpement web.",
-        github: "https://github.com/mamy",
+        github: "https://github.com/Patrick-p25s",
         numero: "032 09 42 210",
         email: "mamy.emit@gmail.com",
-        age: "20",
+        age: "18",
         langage: "C, PHP, Javascript",
         image: "images/fond17.jpg",
     },
     {
         id: 10,
         nom: "RANDRIAMANANA",
-        prenom: "Alai Odon",
+        prenom: "Alain Odon",
         description:
             "Toujours motivee pour collaborer et faire avancer le projet en equipe.",
         github: "https://github.com/felana",
