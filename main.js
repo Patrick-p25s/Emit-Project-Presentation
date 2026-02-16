@@ -35,6 +35,7 @@ const members = [
         age: "18",
         langage: "PHP, Javascript, Python",
         image: "images/fond1.jpg",
+        html: "personallePage/patrick.html",
     },
     {
         id: 2,
@@ -42,12 +43,13 @@ const members = [
         prenom: "Jean Brindo",
         description:
             "Administrateur systeme et reseau, j'aime construire des architectures robustes.",
-        github: "https://github.com/toto",
+        github: "https://github.com/brind-toto",
         numero: "038 92 00 111",
         email: "brindtoto@gmail.com",
         age: "18",
         langage: "Linux, PHP, Javascript",
         image: "images/fond11.jpg",
+        html: "personallePage/brindo.html",
     },
     {
         id: 3,
@@ -55,12 +57,13 @@ const members = [
         prenom: "Steeve Edith",
         description:
             "Passionne par le web moderne, l'UI propre et les experiences fluides.",
-        github: "https://github.com/edit",
+        github: "https://github.com/edit-p25",
         numero: "034 11 88 333",
         email: "edit-emit@gmail.com",
         age: "19",
         langage: "HTML, CSS, Javascript",
         image: "images/fond3.jpg",
+        html: "personallePage/edith.html",
     },
     {
         id: 4,
@@ -68,12 +71,13 @@ const members = [
         prenom: "Elia Carène",
         description:
             "Curieux et rigoureux, j'aime transformer les idees en applications concretes.",
-        github: "https://github.com/lova",
+        github: "https://github.com/elia",
         numero: "034 67 45 120",
         email: "lova.emit@gmail.com",
         age: "19",
         langage: "PHP, MySQL, Javascript",
         image: "images/fond4.jpg",
+        html: "personallePage/elia.html",
     },
     {
         id: 5,
@@ -81,12 +85,13 @@ const members = [
         prenom: "Voary",
         description:
             "Interesse par le backend, la qualite du code et la maintenance long terme.",
-        github: "https://github.com/ando",
+        github: "https://github.com/voary",
         numero: "033 40 25 781",
         email: "ando.emit@gmail.com",
         age: "18",
         langage: "Node.js, PHP, SQL",
         image: "images/fond5.jpg",
+        html: "personallePage/voary.html",
     },
     {
         id: 6,
@@ -94,12 +99,13 @@ const members = [
         prenom: "Fleuria",
         description:
             "Je prefere les interfaces propres, lisibles et faciles a utiliser sur mobile.",
-        github: "https://github.com/miora",
+        github: "https://github.com/fleuria",
         numero: "034 21 56 008",
         email: "miora.emit@gmail.com",
         age: "18",
         langage: "CSS, Javascript, UI",
         image: "images/fond6.jpg",
+        html: "personallePage/fleuria.html",
     },
     {
         id: 7,
@@ -107,12 +113,13 @@ const members = [
         prenom: "Stephan",
         description:
             "Concentre sur les performances et la clarte des choix techniques.",
-        github: "https://github.com/tahina",
+        github: "https://github.com/stephan",
         numero: "032 57 00 441",
         email: "tahina.emit@gmail.com",
         age: "19",
         langage: "Python, Javascript, API",
         image: "images/fond7.jpg",
+        html: "personallePage/stephan.html",
     },
     {
         id: 8,
@@ -120,12 +127,13 @@ const members = [
         prenom: "Johny Nantenaina",
         description:
             "J'aime apprendre vite, prototyper et livrer un rendu solide.",
-        github: "https://github.com/nirina",
+        github: "https://github.com/johny",
         numero: "034 88 10 500",
         email: "nirina.emit@gmail.com",
         age: "18",
         langage: "HTML, CSS, PHP",
         image: "images/fond8.jpg",
+        html: "personallePage/johny.html",
     },
     {
         id: 9,
@@ -133,17 +141,18 @@ const members = [
         prenom: "Nomentsoa Patrick",
         description:
             "Interesse par l'algorithmique, la logique et le developpement web.",
-        github: "https://github.com/mamy",
+        github: "https://github.com/Patrick-p25s",
         numero: "032 09 42 210",
         email: "mamy.emit@gmail.com",
-        age: "20",
+        age: "18",
         langage: "C, PHP, Javascript",
         image: "images/fond17.jpg",
+        html: "personallePage/patrick.html",
     },
     {
         id: 10,
         nom: "RANDRIAMANANA",
-        prenom: "Alai Odon",
+        prenom: "Alain Odon",
         description:
             "Toujours motivee pour collaborer et faire avancer le projet en equipe.",
         github: "https://github.com/felana",
@@ -152,6 +161,7 @@ const members = [
         age: "18",
         langage: "HTML, CSS, Javascript",
         image: "images/fond10.jpg",
+        html: "personallePage/felana.html",
     },
 ];
 
@@ -179,7 +189,7 @@ function renderMembers() {
                         <p class="card-description">${member.description}</p>
                         <div class="card-buttons">
                             <button class="en-savoir-plus button" type="button" data-member-id="${member.id}">En savoir plus</button>
-                            <button class="perso-btn button" type="button" data-member-id="${member.id}">Details</button>
+                            <button class="perso-btn button"><a href="${member.html}" target="_blank" class="link">Details</a></button>
                         </div>
                     </section>
                 </article>
@@ -386,20 +396,6 @@ function initThemeToggle() {
     });
 }
 
-function initLangToggle() {
-    const langButtons = Array.from(document.querySelectorAll(".lang-btn"));
-
-    langButtons.forEach((btn, idx) => {
-        if (idx === 0) {
-            btn.classList.add("active");
-        }
-
-        btn.addEventListener("click", () => {
-            langButtons.forEach((item) => item.classList.remove("active"));
-            btn.classList.add("active");
-        });
-    });
-}
 
 function initContactForm() {
     contactForm.addEventListener("submit", (event) => {
@@ -419,7 +415,6 @@ bindImageFullscreen();
 initModalControls();
 initCarousel();
 initThemeToggle();
-initLangToggle();
 initContactForm();
 
 animateGroupTitle();
