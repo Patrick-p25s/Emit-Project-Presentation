@@ -139,7 +139,7 @@ span{
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.stack-item:nth-child(1) .thumb { background-image: url(Brindo.png); }
+.stack-item:nth-child(1) .thumb { background-image: url(DeFace.png); }
 .stack-item:nth-child(2) .thumb { background-image: url(Guitare.jpeg); }
 .stack-item:nth-child(3) .thumb { background-image: url(XUbuntu.jpg); }
 .stack-item:nth-child(4) .thumb { background-image: url(BigTOTO.jpg); }
@@ -215,22 +215,13 @@ article:hover {
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
+    z-index: -2;
 }
 
-.card-project i{
-    position: relative;
-    padding-right: 25px;
-    text-decoration: none;
-    color: #333;
-}
-.card-project i::after{
-    content: "→";
-    position: absolute;
-    right: 0;
-    transition: transform 0.3s;
-}
-.card-project i:hover::after{
-    transform: translateX(5px);
+.petit-text{
+    color: #f0e5e5;
+    background-color: rgba(0, 0, 0, 0.445);
 }
 
 .temoin{
