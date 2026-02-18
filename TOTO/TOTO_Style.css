@@ -281,3 +281,19 @@ footer {
     color: #b58b6b;
     text-decoration: underline;
 }
+
+.Anarana{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #4f443b;
+    text-align: left;
+    list-style: none;
+    padding-left: 0px;
+    position: relative;
+}
+
+.Fanampiny{
+    font-weight: 300;
+    color: #4f443b;
+    list-style:square;
+}
