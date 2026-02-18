@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../PersoCss/patrick.css">
+</head>
+<body>
+     <header class="hero">
+        <article class="info-card article1">
+            <div class="card-img">
+                <img src="../images/nomentsoa.png" alt="Photo de Nomentsoa Patrick" class="image click-fullscreen">
+            </div>
+            <section class="text-card">
+                <h3 class="card-title name">Nomentsoa Patrick</h3>
+            </section>
+            <section>
+                <div class="citation" aria-live="polite">
+                    <p id="citation-text" class="citation-text">Il ne savait pas que c'etait impossible donc il l'a fait.</p>
+                    <p id="citation-author" class="citation-author">Albert Einstein</p>
+                </div>
+            </section>
+        </article>
+        <article class="info-card article2">
+            <h1 class="title">Informations</h1>
+            <select name="temps" id="temps">
+                <option value="passe">Passe</option>
+                <option value="present" selected>Present</option>
+                <option value="future">Future</option>
+            </select>
+
+            <p id="period-label" class="period-label"></p>
+            <section id="info-content" class="info-content" aria-live="polite"></section>
+        </article>
+     </header>
+
+     <script src="../PersoCss/patrick.js"></script>
+</body>
+</html>
