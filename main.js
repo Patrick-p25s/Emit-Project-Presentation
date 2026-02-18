@@ -25,8 +25,8 @@ const modalFields = {
 const members = [
     {
         id: 1,
-        nom: "RASOANIRINA",
-        prenom: "Fetra Sarobidy",
+        nom: "MAMILALAINA",
+        prenom: "Fleuria",
         description:
             "Developpeur full-stack passionne de science des donnees et de solutions utiles.",
         github: "https://github.com/Patrick-p25s",
@@ -34,8 +34,8 @@ const members = [
         email: "nomp6836@gmail.com",
         age: "18",
         langage: "PHP, Javascript, Python",
-        image: "images/fond1.jpg",
-        html: "personallePage/patrick.html",
+        image: "images/fleuria.jpg",
+        html: "PersoHtml/fleuria.html",
     },
     {
         id: 2,
@@ -48,8 +48,8 @@ const members = [
         email: "brindtoto@gmail.com",
         age: "18",
         langage: "Linux, PHP, Javascript",
-        image: "images/fond11.jpg",
-        html: "personallePage/brindo.html",
+        image: "images/Brindo.png",
+        html: "PersoHtml/Page_TOTO.html",
     },
     {
         id: 3,
@@ -62,8 +62,8 @@ const members = [
         email: "edit-emit@gmail.com",
         age: "19",
         langage: "HTML, CSS, Javascript",
-        image: "images/fond3.jpg",
-        html: "personallePage/edith.html",
+        image: "images/edith.png",
+        html: "PersoHtml/edith.html",
     },
     {
         id: 4,
@@ -76,8 +76,8 @@ const members = [
         email: "lova.emit@gmail.com",
         age: "19",
         langage: "PHP, MySQL, Javascript",
-        image: "images/fond4.jpg",
-        html: "personallePage/elia.html",
+        image: "images/carene.jpg",
+        html: "PersoHtml/carene.html",
     },
     {
         id: 5,
@@ -90,13 +90,13 @@ const members = [
         email: "ando.emit@gmail.com",
         age: "18",
         langage: "Node.js, PHP, SQL",
-        image: "images/fond5.jpg",
-        html: "personallePage/voary.html",
+        image: "images/leonette.jpg",
+        html: "PersoHtml/voary.html",
     },
     {
         id: 6,
         nom: "MAMILALAINA",
-        prenom: "Fleuria",
+        prenom: "Sarobidy",
         description:
             "Je prefere les interfaces propres, lisibles et faciles a utiliser sur mobile.",
         github: "https://github.com/fleuria",
@@ -104,8 +104,8 @@ const members = [
         email: "miora.emit@gmail.com",
         age: "18",
         langage: "CSS, Javascript, UI",
-        image: "images/fond6.jpg",
-        html: "personallePage/fleuria.html",
+        image: "images/sarobidy.jpg",
+        html: "PersoHtml/sarobidy.html",
     },
     {
         id: 7,
@@ -118,8 +118,8 @@ const members = [
         email: "tahina.emit@gmail.com",
         age: "19",
         langage: "Python, Javascript, API",
-        image: "images/fond7.jpg",
-        html: "personallePage/stephan.html",
+        image: "images/stephan.jpeg",
+        html: "PersoHtml/stephan.html",
     },
     {
         id: 8,
@@ -132,8 +132,8 @@ const members = [
         email: "nirina.emit@gmail.com",
         age: "18",
         langage: "HTML, CSS, PHP",
-        image: "images/fond8.jpg",
-        html: "personallePage/johny.html",
+        image: "images/johny.jpg",
+        html: "PersoHtml/johny.html",
     },
     {
         id: 9,
@@ -146,22 +146,22 @@ const members = [
         email: "mamy.emit@gmail.com",
         age: "18",
         langage: "C, PHP, Javascript",
-        image: "images/fond17.jpg",
-        html: "personallePage/patrick.html",
+        image: "images/nomentsoa.png",
+        html: "PersoHtml/patrick.html",
     },
     {
         id: 10,
         nom: "RANDRIAMANANA",
         prenom: "Alain Odon",
         description:
-            "Toujours motivee pour collaborer et faire avancer le projet en equipe.",
+            "Toujours motivé pour collaborer et faire avancer le projet en equipe.",
         github: "https://github.com/felana",
         numero: "033 21 09 773",
         email: "felana.emit@gmail.com",
         age: "18",
         langage: "HTML, CSS, Javascript",
-        image: "images/fond10.jpg",
-        html: "personallePage/felana.html",
+        image: "images/odon.jpg",
+        html: "PersoHtml/odon.html",
     },
 ];
 

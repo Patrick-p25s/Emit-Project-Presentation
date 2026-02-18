@@ -1,0 +1,60 @@
+/*style de base*/
+body{
+    font-family: 'Arial',sans-serif;
+    background-color: #020006;
+    margin: 0;
+    margin-left: 100px;
+    margin: right 100px; ;
+    margin: bottom 100px; ;
+    margin: top 100px; ;
+    display: flex;
+    justify-content:center;
+    padding: 40px;
+}
+.container{
+    width: 100%;
+    background: rgb(238, 238, 234);
+    display: flex;
+    box-shadow: 00 20px rgba(red, green, rgb(0, 0, 36), alpha);
+}
+.sidebar{
+    width: 100%;
+    background-color: #2c3e50;
+    color: rgb(239, 240, 235);
+    padding: 50px;
+}
+.profil-img{
+    width: 100%;
+    border-radius: 100%;
+    border: 3px solid rgb(13, 4, 74);
+    .sidebar h1 {font-size: 50px;}
+    .job-title{color:#3498db;}
+    .main-content{
+        width: 100%;
+        padding: 40px;
+    }
+}
+h2{
+    color: #740350;
+    border-bottom: 2px solid #0f0101;
+    padding-bottom: 5px;
+}
+.item{margin-bottom: 20px;}
+.section-informatique {
+    padding: rigth 5px;
+    padding-left: 5px;
+    }
+    .container-rond{
+        width: 200px;
+        height: 200px;
+        border-radius:50%;
+        overflow:hidden;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .conteneur-rond img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
