@@ -356,7 +356,7 @@ function initCarousel() {
         clearInterval(carouselTimer);
         carouselTimer = setInterval(() => {
             showSlide(slideIndex + 1);
-        }, 3400);
+        }, 3000);
     }
 
     prevBtn.addEventListener("click", () => {

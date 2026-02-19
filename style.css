@@ -897,7 +897,7 @@ body[data-theme="dark"] .hero-title-box,
 body[data-theme="dark"] .hero-card,
 body[data-theme="dark"] .header-pages,
 body[data-theme="dark"] .contact,
-body[data-theme="dark"] .modal-item,
+/* body[data-theme="dark"] .modal-item, */
 body[data-theme="dark"] .contact-info-card,
 body[data-theme="dark"] .contact-form-card,
 body[data-theme="dark"] .info-card,
@@ -905,9 +905,13 @@ body[data-theme="dark"] .theme-toggle-card,
 body[data-theme="dark"] .lang-btn,
 body[data-theme="dark"] .theme-toggle,
 body[data-theme="dark"] .contact-form-card input,
+body[data-theme="dark"] .modal-parts .parts-content,
 body[data-theme="dark"] .contact-form-card textarea {
     background: #0f1c31;
     color: #e6edf7;
+}
+body[data-theme="dark"] .modal-item p, body[data-theme="dark"] .modal-item a{
+    color: white;
 }
 
 body[data-theme="dark"] .modal-item h5,
@@ -918,7 +922,7 @@ body[data-theme="dark"] .contact-info-card p {
     color: #a7b8cf;
 }
 
-body[data-theme="dark"] .btn-secondary {
+body[data-theme="dark"] .btn-secondary, body[data-theme="dark"] .modal-item{
     border-color: #3f557a;
     color: #d9e5f6;
     background: rgba(8, 19, 37, 0.55);
